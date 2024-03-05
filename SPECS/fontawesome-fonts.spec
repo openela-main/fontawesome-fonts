@@ -3,7 +3,7 @@
 
 Name:		%{fontname}-fonts
 Version:	4.7.0
-Release:	4%{?dist}
+Release:	5%{?dist}
 
 Summary:	Iconic font set
 License:	OFL
@@ -79,6 +79,10 @@ cp -a css less scss %{buildroot}%{_datadir}/font-awesome-web/
 %{_datadir}/fonts/fontawesome/fontawesome-webfont.eot
 
 %changelog
+* Tue Nov 14 2023 Thomas Woerner <twoerner@redhat.com> - 4.7.0-5
+- Release bump to solve missing fontawesome-fonts-web in RHEL 8.9 and later
+  Resolves: RHEL-16351
+
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 4.7.0-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
